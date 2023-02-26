@@ -10,9 +10,9 @@ import { useConductores } from "../../Context/Context";
 function Navbar() {
   const { openSidebar } = useConductores();
 
-  //  const token =window.localStorage.getItem("token");
+  const token =window.localStorage.getItem("token");
    
-  //  const decodedToken = jwtDecode(token);
+   const decodedToken = jwtDecode(token);
    
 
   // if (document.querySelector(".toggle-sidebar-btn")) {
@@ -54,7 +54,7 @@ function Navbar() {
                 ></img>
 
                 <span className="d-none d-md-block dropdown-toggle ps-2">
-                  {/* {decodedToken.name} */}
+                   {decodedToken.name} 
                 </span>
               </a>
 
