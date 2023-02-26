@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+
 import "../css/style.css";
 import Footer from "../components/Footer";
 import imagen1 from "../assets/ilustraciones/movil-inicio.png";
@@ -437,7 +437,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <Footer />
+      
     </>
   );
 }

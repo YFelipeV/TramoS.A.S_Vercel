@@ -1,20 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, About, Contact, Header } from "../Components";
 import Navbar from "../dashboard/Menus/Navbar";
-import Conductores from "../pages/Conductores";
-import Login from "../Pages/Login";
-import Solicitudes from "../pages/Solicitudes";
-import DatosCliente from "../Pages/DatosCliente";
-import DatosConductores from "../pages/DatosConductores";
-import Historial from "../Pages/Historial";
-import Pqrs from "../Pages/Pqrs";
-import DatosClienteEmpresa from "../Pages/DatosClienteEmpresa";
-import Pagina404 from "../Pages/Pagina404";
+import {Conductores,DatosCliente,DatosClienteEmpresa,DatosConductores,Historial,Login,Pagina404,} from '../Pages'
 
-import { useConductores } from "../Context/Context";
+
+
 
 export const AppRouter = () => {
-  const { DatosConductorHabilitados } = useConductores();
+  
   return (
     <>
       {/* PUBLICAS*/}
