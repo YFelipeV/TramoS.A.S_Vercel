@@ -1,5 +1,5 @@
 import felipeD from "../assets/Integrantes/Perfil_SF.png";
-import carlos from "../assets/Integrantes/CarlosSF.png";
+
 import jhon from "../assets/Integrantes/JhonSF.png";
 import felipeS from "../assets/Integrantes/SeguraSF.png";
 import yonathan from "../assets/Integrantes/YonatanSF.png";
