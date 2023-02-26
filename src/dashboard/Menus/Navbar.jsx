@@ -4,7 +4,7 @@ import "../../css/styleAdmin.css";
 import profile from "../../assets/icons/profile.jpg";
 import { Link } from "react-router-dom";
 import { Loguot } from "../../api/api";
-// import jwtDecode from 'jwt-decode';
+ import jwtDecode from 'jwt-decode';
 import { useConductores } from "../../Context/Context";
 
 function Navbar() {
