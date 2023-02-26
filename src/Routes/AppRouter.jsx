@@ -35,6 +35,7 @@ export const AppRouter = () => {
           <Route path="pqrs" element={<Pqrs />} />
         </Route>
         <Route path="/pagina404" element={<Pagina404 />} />
+        <Route path="*" element={<Pagina404 />} />
       </Routes>
     </>
   );
