@@ -1,6 +1,6 @@
 
 import "../css/style.css";
-import Footer from "../components/Footer";
+
 import imagen1 from "../assets/ilustraciones/movil-inicio.png";
 import imagen2 from "../assets/icons/arrow-right.png";
 import company_1 from "../assets/sponsor/company-1.png";
