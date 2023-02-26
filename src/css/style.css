@@ -83,7 +83,7 @@ body {
         width: 100%;
 
     }
-
+    
     .acercaImg {
         margin-top: 64px;
         margin-bottom: 40px;
@@ -433,6 +433,9 @@ background-color: #50ff43;
         display: flex;
         justify-content: center;
       }
+      .maquina{
+        width: 22rem;
+    }
   }
   /* ======================================================= */
   /*Slider Testimonios*/
