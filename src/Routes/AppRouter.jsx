@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, About, Contact, Header } from "../Components";
 import Navbar from "../dashboard/Menus/Navbar";
-import {Conductores,DatosCliente,DatosClienteEmpresa,DatosConductores,Historial,Login,Pagina404,} from '../Pages'
+import {Conductores,DatosCliente,DatosClienteEmpresa,DatosConductores,Historial,Login,Pagina404,Solicitudes} from '../Pages'
 
 
 
