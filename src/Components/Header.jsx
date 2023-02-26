@@ -1,11 +1,11 @@
 import logo from "../assets/icons/horizontal.jpg";
 import Footer from "./Footer";
+import "../css/style.css";
 import { Link, Outlet } from "react-router-dom";
 function Header() {
   return (
     <>
       <header>
-        
         <nav
           className="navbar d-flex navbar-expand-lg navbar-light fixed-top pt-3 bg-white"
           data-navbar-on-scroll="data-navbar-on-scroll"

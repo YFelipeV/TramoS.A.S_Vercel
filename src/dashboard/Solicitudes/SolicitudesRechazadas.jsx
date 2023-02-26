@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import Navbar from "../Menus/Navbar";
-import Sidebar from "../Menus/Sidebar";
 import { useConductores } from "../../Context/Context";
 import SolicitudesRechCard from "./SolicitudesRechCard";
 
@@ -13,8 +11,6 @@ function SolicitudesRechazadas() {
 
   return (
     <>
-     
-
       <div className="col-12">
         <div className="card my-4">
           <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2">

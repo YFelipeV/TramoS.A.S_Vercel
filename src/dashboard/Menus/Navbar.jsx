@@ -4,24 +4,15 @@ import "../../css/styleAdmin.css";
 import profile from "../../assets/icons/profile.jpg";
 import { Link } from "react-router-dom";
 import { Loguot } from "../../api/api";
- import jwtDecode from 'jwt-decode';
+import jwtDecode from "jwt-decode";
 import { useConductores } from "../../Context/Context";
 
 function Navbar() {
   const { openSidebar } = useConductores();
 
-  const token =window.localStorage.getItem("token");
-   
-   const decodedToken = jwtDecode(token);
-   
+  const token = window.localStorage.getItem("token");
 
-  // if (document.querySelector(".toggle-sidebar-btn")) {
-  //   document
-  //     .querySelector(".toggle-sidebar-btn")
-  //     .addEventListener("click", function (e) {
-  //       document.querySelector("body").classList.toggle("toggle-sidebar");
-  //     });
-  // }
+  const decodedToken = jwtDecode(token);
 
   return (
     <>
@@ -54,7 +45,7 @@ function Navbar() {
                 ></img>
 
                 <span className="d-none d-md-block dropdown-toggle ps-2">
-                   {decodedToken.name} 
+                  {decodedToken.name}
                 </span>
               </a>
 
