@@ -24,7 +24,6 @@ export const AppRouter = () => {
           <Route path="contactos" element={<Contact />} />
         </Route>
         <Route path="Login" element={<Login />} />
-        <Route path="404" element={<Pagina404 />} />
         {/* PRIVADAS*/}*
         <Route path="/dashboard" element={<Navbar />}>
           <Route index element={<Conductores />} />
