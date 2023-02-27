@@ -33,7 +33,8 @@ function SolicitudesCards() {
                   <img
                     src={fotoperfilCON}
                     alt=""
-                    className="rounded-circle fotoperfil w-75 "
+                    className="rounded-circle fotoperfil  "
+                    style={{maxWidth:"110px"}}
                   ></img>
                 </div>
               </td>

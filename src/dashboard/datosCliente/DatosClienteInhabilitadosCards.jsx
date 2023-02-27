@@ -37,6 +37,7 @@ function DatosClienteInhabilitadosCards() {
                   src={fotoPerfilPNA}
                   alt="Profile"
                   className="rounded-circle w-75"
+                  style={{maxWidth:"100px"}}
                 />
               </div>
             </td>

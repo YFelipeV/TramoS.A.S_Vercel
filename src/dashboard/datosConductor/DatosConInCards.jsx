@@ -39,6 +39,7 @@ function DatosConInCards() {
                   src={fotoperfilCON}
                   className="rounded-circle w-75"
                   alt=""
+                  style={{maxWidth:"110px"}}
                 />
               </div>
             </td>

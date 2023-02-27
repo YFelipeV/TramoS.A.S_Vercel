@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Loguot } from "../../api/api";
 import jwtDecode from "jwt-decode";
 import { useConductores } from "../../Context/Context";
+import { useState } from "react";
 
 function Navbar() {
   const { openSidebar } = useConductores();
@@ -57,6 +58,18 @@ function Navbar() {
                       Cerrar Sesión
                     </Link>
                   </div>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <button className="dropdown-item d-flex align-items-center">
+                    <i className="bi bi-moon text-warning"></i>
+                    <span className="">Modo Oscuro</span>
+                  </button>
                 </li>
               </ul>
             </li>

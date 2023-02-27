@@ -6,6 +6,7 @@ import { useConductores } from "../../Context/Context";
 function ModalDatosClienteEmpresa() {
     const[write,setWrite]=useState("")
     const { id } = useConductores();
+    console.log(id)
     const user={
         idPerJuridica:id,
         motivoInhabilitadoPJU:write

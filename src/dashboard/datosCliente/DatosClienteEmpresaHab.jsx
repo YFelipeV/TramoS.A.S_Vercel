@@ -1,7 +1,7 @@
 import { useConductores } from "../../Context/Context";
 import ModalDatosClienteEmpresa from "../Modales/ModalDatosClienteEmpresa";
 
-import Estrella from "./Estrella";
+
 function DatosClienteEmpresaHab() {
   const { DatosClientehabilitadosEmpresa,idPersonal } = useConductores();
   
@@ -29,6 +29,7 @@ function DatosClienteEmpresaHab() {
                   src={fotoPerfilPNA}
                   alt="Profile"
                   className="rounded-circle w-75"
+                  style={{maxWidth:"100px"}}
                 />
               </div>
             </td>

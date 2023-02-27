@@ -18,7 +18,7 @@ function ModalPqrs() {
             <div className="modal-content">
               <div className="modal-header">
                 <h1 className="modal-title fs-5" id="mas-datosLabel">
-                  Motivo de rechazo{" "}
+                  Motivo P-Q-R-S{" "}
                 </h1>
                 <button
                   type="button"
@@ -29,16 +29,16 @@ function ModalPqrs() {
               </div>
               <div className="modal-body">
                 {/* {data.motivoRechazoCON} */}
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum, ab odit maiores quidem numquam facere non autem, omnis eligendi quo reiciendis suscipit nulla officiis accusantium? Officiis voluptas culpa tempore.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse necessitatibus earum quam, est omnis error, cumque, incidunt nesciunt tempora doloribus? Perspiciatis perferendis facilis quis, voluptatem consequatur sequi soluta modi.</p>
+                <p className='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum, ab odit maiores quidem numquam facere non autem, omnis eligendi quo reiciendis suscipit nulla officiis accusantium? Officiis voluptas culpa tempore.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas esse necessitatibus earum quam, est omnis error, cumque, incidunt nesciunt tempora doloribus? Perspiciatis perferendis facilis quis, voluptatem consequatur sequi soluta modi.</p>
 
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-               
+                <textarea name="" id="" cols="55" rows="10"></textarea>
+               <button className='btn btn-primary w-100 my-1'>Enviar</button>
               </div>
             </div>
           </div>
         </div>
       </td>
-    </tr>
+      </tr>
     
     </>
   )

@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, About, Contact, Header } from "../Components";
 import Navbar from "../dashboard/Menus/Navbar";
+import Manifiesto from "../dashboard/Modales/Manifiesto";
+import { PDFViewer } from "@react-pdf/renderer";
 import {
   Conductores,
   DatosCliente,
@@ -35,6 +37,7 @@ export const AppRouter = () => {
           <Route path="pqrs" element={<Pqrs />} />
         </Route>
         <Route path="/pagina404" element={<Pagina404 />} />
+        <Route path="/manifiesto" element={ <PDFViewer style={{width:"100%",height:"100vh",backgroundColor:"dark"}} ><Manifiesto /></PDFViewer>} />
         <Route path="*" element={<Pagina404 />} />
       </Routes>
     </>

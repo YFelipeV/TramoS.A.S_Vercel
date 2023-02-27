@@ -1,5 +1,5 @@
 
-import HistorialCard from "../dashboard/historial/HistorialCard";
+import HistorialCards from "../dashboard/historial/HistorialCards";
 import { useEffect } from "react";
 import {useConductores} from '../Context/Context'
 
@@ -35,7 +35,7 @@ function Historial() {
                   </tr>
                 </thead>
                 <tbody>
-                  <HistorialCard />
+                  <HistorialCards />
                 </tbody>
               </table>
             </div>

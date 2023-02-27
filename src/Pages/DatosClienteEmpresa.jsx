@@ -28,7 +28,7 @@ function DatosClienteEmpresa() {
             
            
           </button>
-          <button className="btn btn-success mx-2" type="submit" onClick={()=>{
+          <button className="btn btn-primary mx-2" type="submit" onClick={()=>{
             navigate("/dashboard/datosclienteEmpresa")}}>
             Ver Cliente Empresa
           </button>

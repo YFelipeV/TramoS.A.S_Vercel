@@ -41,44 +41,6 @@ export const handleSubmit = async ({ correoAdmin, passwordAdmin }) => {
 
 
 
-// export const handleSubmit = async ({correoAdmin,passwordAdmin}) => {
- 
-  
- 
- 
-//   const response = await fetch('https://rest-api-tramo-production.up.railway.app/auth', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify({ correoAdmin,passwordAdmin  }),
-//   })
-  
-  
-//   const { alert, alertTitle, alertMessage, alertIcon, showConfirmButton, timer, ruta} = await response.json();
-//   if(alert){
-//     Swal.fire({
-//       title:alertTitle,
-//       text: alertMessage,
-//       icon: alertIcon ,
-//       showConfirmButton: showConfirmButton,
-//       timer:  timer
-//     }).then(()=>{
-//       window.location=ruta
-//     })
-//   }
-//   const auth=token;
-
-//   getDatosClientesHabilitadosEmpresa(auth)
-//   getDatosClientesinhabilitadoEmpresa(auth)
-  
-  
-//   // Aquí puedes usar los valores de la respuesta para mostrar una alerta con SweetAlert2
-// };
-
-
-
-
 {
   /* CONDUCTORES  DISPONIBLE*/
 }

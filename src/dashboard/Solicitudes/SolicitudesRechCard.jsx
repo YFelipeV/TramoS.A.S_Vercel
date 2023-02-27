@@ -27,7 +27,7 @@ function SolicitudesRechCard() {
                     src={fotoperfilCON}
                     alt=""
                     className="rounded-circle"
-                    width={"50%"}
+                    style={{maxWidth:"110px"}}
                   ></img>
                 </span>
               </td>

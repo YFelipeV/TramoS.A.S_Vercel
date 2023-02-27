@@ -17,7 +17,7 @@ function DatosCliente() {
           }}>
             Ver Cliente Natural
           </button>
-          <button className="btn btn-success mx-2" type="submit"
+          <button className="btn btn-primary mx-2" type="submit"
           onClick={()=>{
             navigate("/dashboard/datosclienteEmpresa")
           }}>

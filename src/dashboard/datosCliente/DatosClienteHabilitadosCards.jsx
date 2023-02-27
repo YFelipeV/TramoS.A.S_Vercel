@@ -31,15 +31,16 @@ function DatosClienteHabilitadosCards() {
         }) => (
           <tr key={idPerNatural}>
             <td>
-              <p className="font-weight-bold text-xs font-weight-bold m-0 text-danger">
+              <p className="font-weight-bold text-xs font-weight-bold m-0 text-danger text-center">
                 <b>Cliente Natural</b>
               </p>
 
-              <div>
+              <div className="d-flex justify-content-center">
                 <img
                   src={fotoPerfilPNA}
                   alt="Profile"
-                  className="rounded-circle w-75"
+                  className="rounded-circle "
+                  style={{maxWidth:"100px"}}
                 />
               </div>
             </td>
