@@ -1,4 +1,4 @@
-import { Document, Page, Text, View, } from "@react-pdf/renderer";
+import { Document, Page, Text, View } from "@react-pdf/renderer";
 
 function Manifiesto() {
   return (
@@ -12,7 +12,7 @@ function Manifiesto() {
                 <Text > Fecha expedicion</Text>
                     
                 <Text>Origen del viaje</Text>
-                <Text> Tipo de manifiesto</Text>
+                <Text > Tipo de manifiesto</Text>
                 </td>
                 </tr>
                 
