@@ -1,4 +1,3 @@
-
 import "../css/style.css";
 
 import imagen1 from "../assets/ilustraciones/movil-inicio.png";
@@ -17,10 +16,10 @@ import playstore from "../assets/icons/google-play.png";
 import ilustracion2 from "../assets/ilustraciones/cta.svg";
 import { Link } from "react-router-dom";
 import Testimonios from "./Testimonios";
+import { lazy } from "react";
 function Home() {
   return (
     <>
-      
       <section className=" mb-5  index_inicio" id="home">
         <div className="container position-relative  mt-5">
           <div className="row align-items-center ">
@@ -28,6 +27,7 @@ function Home() {
               <img
                 className="img-fluid flotante"
                 src={imagen1}
+                loading={lazy}
                 style={{ maxWidth: "270px" }}
                 alt=""
               ></img>
@@ -37,13 +37,16 @@ function Home() {
                 APP #1 Transporte De Carga 2023
                 <img
                   className="img-fluid float-start me-4  "
+                  loading={lazy}
                   src={imagen2}
                   alt=""
                 ></img>
               </span>
               <h1 className="mb-4 display-5 fw-bold lh-sm dark">
                 TRAMO <br className="d-block d-lg-none d-xl-block d5" />
-               <span className="display-5 fw-bold maquina">Transporte y Movilidad</span> 
+                <span className="display-5 fw-bold maquina">
+                  Transporte y Movilidad
+                </span>
               </h1>
               <p className="mt-3 mb-4 fs-5   gray">
                 Solicita tu servicio desde cualquier lugar{" "}
@@ -77,19 +80,19 @@ function Home() {
           </div>
           <div className="row align-items-center justify-content-center justify-content-lg-around">
             <div className="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center">
-              <img src={company_1} alt=""></img>
+              <img src={company_1} loading={lazy} alt=""></img>
             </div>
             <div className="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center">
-              <img src={company_2} alt=""></img>
+              <img src={company_2} loading={lazy} alt=""></img>
             </div>
             <div className="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center">
-              <img src={company_3} alt=""></img>
+              <img src={company_3} loading={lazy} alt=""></img>
             </div>
             <div className="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center">
-              <img src={company_4} alt=""></img>
+              <img src={company_4} loading={lazy} alt=""></img>
             </div>
             <div className="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center">
-              <img src={company_1} alt=""></img>
+              <img src={company_1} loading={lazy} alt=""></img>
             </div>
           </div>
         </div>
@@ -105,6 +108,7 @@ function Home() {
                 className="img-fluid ilustracionEmpresa flotante"
                 src={ilustracion}
                 style={{ maxWidth: "290px" }}
+                loading={lazy}
                 alt=""
               ></img>
             </div>
@@ -124,6 +128,7 @@ function Home() {
                   <img
                     className="img-fluid "
                     src={icon1}
+                    loading={lazy}
                     width="90"
                     alt=""
                   ></img>
@@ -143,6 +148,7 @@ function Home() {
                     className="img-fluid "
                     src={icon2}
                     width="90"
+                    loading={lazy}
                     alt=""
                   ></img>
                 </div>
@@ -161,6 +167,7 @@ function Home() {
                   <img
                     className="img-fluid "
                     src={icon3}
+                    loading={lazy}
                     width="90"
                     alt=""
                   ></img>
@@ -211,6 +218,7 @@ function Home() {
               <img
                 className="img-fluid acercaImg my-md-5  flotante"
                 src={acerca}
+                loading={lazy}
                 width="300"
                 alt=""
               ></img>
@@ -408,6 +416,7 @@ function Home() {
               <img
                 className="img-fluid mb-4 mb-md-0 img_descarga ilustracion  w-75 flotante"
                 src={ilustracion2}
+                loading={lazy}
                 alt=""
               ></img>
             </div>
@@ -429,6 +438,7 @@ function Home() {
                   <img
                     className="w-sm-25 w-md-50 appstore"
                     src={appstore}
+                    loading={lazy}
                     alt=""
                   ></img>
                 </a>
@@ -437,7 +447,6 @@ function Home() {
           </div>
         </div>
       </section>
-      
     </>
   );
 }
