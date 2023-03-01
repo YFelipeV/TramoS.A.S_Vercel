@@ -1,6 +1,6 @@
 import "../css/style.css";
 
-import imagen1 from "../assets/ilustraciones/movil-inicio.png";
+// import imagen1 from "../assets/ilustraciones/movil-inicio.png";
 import imagen2 from "../assets/icons/arrow-right.png";
 import company_1 from "../assets/sponsor/company-1.png";
 import company_2 from "../assets/sponsor/company-2.png";
@@ -26,7 +26,7 @@ function Home() {
             <div className="col-md-5 col-lg-6 order-md-1 text-center">
               <img
                 className="img-fluid flotante"
-                src={imagen1}
+                src="https://pasteboard.co/tLZe2QfrKGKw.png"
                 loading={lazy}
                 style={{ maxWidth: "270px" }}
                 alt=""
