@@ -2,6 +2,8 @@ import logo from "../assets/icons/horizontal.jpg";
 import Footer from "./Footer";
 import "../css/style.css";
 import { Link, Outlet } from "react-router-dom";
+
+
 function Header() {
   return (
     <>

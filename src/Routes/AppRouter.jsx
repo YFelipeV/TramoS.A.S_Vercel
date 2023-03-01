@@ -3,6 +3,7 @@ import { Home, About, Contact, Header } from "../Components";
 import Navbar from "../dashboard/Menus/Navbar";
 import Manifiesto from "../dashboard/Modales/Manifiesto";
 import { PDFViewer } from "@react-pdf/renderer";
+import { lazy, Suspense } from "react";
 import {
   Conductores,
   DatosCliente,
@@ -14,13 +15,20 @@ import {
   Solicitudes,
   Pqrs,
 } from "../Pages";
-
+const Head = lazy(() => import("../Components/Header"));
 export const AppRouter = () => {
   return (
     <>
       {/* PUBLICAS*/}
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<h4>cargando...</h4>}>
+              <Head />
+            </Suspense>
+          }
+        >
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contactos" element={<Contact />} />
@@ -37,7 +45,20 @@ export const AppRouter = () => {
           <Route path="pqrs" element={<Pqrs />} />
         </Route>
         <Route path="/pagina404" element={<Pagina404 />} />
-        <Route path="/manifiesto" element={ <PDFViewer style={{width:"100%",height:"100vh",backgroundColor:"dark"}} ><Manifiesto /></PDFViewer>} />
+        <Route
+          path="/manifiesto"
+          element={
+            <PDFViewer
+              style={{
+                width: "100%",
+                height: "100vh",
+                backgroundColor: "dark",
+              }}
+            >
+              <Manifiesto />
+            </PDFViewer>
+          }
+        />
         <Route path="*" element={<Pagina404 />} />
       </Routes>
     </>
